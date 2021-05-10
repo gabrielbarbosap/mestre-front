@@ -1,0 +1,24 @@
+div {
+    display: inline-block;
+    margin: 0.2rem;
+    background-color: #FDBE11;
+    border-radius: 5px;
+}
+
+mat-accordion {
+    margin: 1rem;
+    display: inline-block;
+}
+
+.card-title {
+    margin-bottom: 0;
+}
+
+.card-link {
+    border-radius: 5px;
+    padding: 0.5rem;
+    float: right;
+    width: 100%;
+    color: #FFFFFF;
+    background-color: #0053A0;
+}

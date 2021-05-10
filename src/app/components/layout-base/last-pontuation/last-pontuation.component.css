@@ -1,0 +1,23 @@
+img {
+    width: 13%;
+    float: right;
+}
+
+span {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.team {
+    text-align: center;
+    font-size: 2rem;
+}
+
+small {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.card-body {
+    background-color: #FDBE11;
+}

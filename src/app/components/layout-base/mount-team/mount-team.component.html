@@ -1,1 +1,17 @@
-<p>mount-team works!</p>
+<mat-accordion class="example-headers-align" multi>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Escalar Time
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div *ngFor="let player of players">
+            <div class="card-body">
+                <h6 class="card-title">{{player.name}}</h6>
+                <span class="card-subtitle mb-2 text-muted">{{ player.position }}</span>
+                <button class="card-link">Escalar</button>
+            </div>
+        </div>
+
+    </mat-expansion-panel>
+</mat-accordion>

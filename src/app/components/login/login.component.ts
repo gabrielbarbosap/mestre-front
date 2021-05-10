@@ -9,7 +9,6 @@ import { AuthenticationService } from 'src/app/services/auth.service';
 })
 export class LoginComponent implements OnInit {
   fb;
-  hide = true;
 
   constructor(
     private auth: AuthenticationService,

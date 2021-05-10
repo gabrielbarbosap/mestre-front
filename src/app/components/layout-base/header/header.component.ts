@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
 
 @Component({
@@ -10,15 +9,7 @@ import { UserService } from 'src/app/services/user.service';
 export class HeaderComponent implements OnInit {
   user = '';
 
-  constructor(private userService: UserService, private router: Router) {}
+  constructor(private userService: UserService) {}
 
-  ngOnInit(): void {
-    this.user = localStorage.getItem('USER_ID');
-    this.userService.getUserForId(this.user).subscribe(
-      (res) => alert(res.data.name),
-      (err) => {
-        this.router.navigate(['login']);
-      }
-    );
-  }
+  ngOnInit(): void {}
 }

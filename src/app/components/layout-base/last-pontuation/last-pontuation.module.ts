@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { SharedModule } from 'src/app/shared/shared.module';
-import { MountTeamComponent } from './mount-team.component';
+import { LastPontuationComponent } from './last-pontuation.component';
 
 @NgModule({
-  declarations: [MountTeamComponent],
+  declarations: [LastPontuationComponent],
   imports: [CommonModule, SharedModule],
-  exports: [MountTeamComponent],
+  exports: [LastPontuationComponent],
   entryComponents: [],
 })
-export class MountTeamModule {}
+export class LastPontuationModule {}

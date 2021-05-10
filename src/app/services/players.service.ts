@@ -5,12 +5,12 @@ import { environment } from '../../environments/environment';
 @Injectable({
   providedIn: 'root',
 })
-export class UserService {
+export class PlayersService {
   url = environment.url;
 
   constructor(private http: HttpClient) {}
 
-  getUserForId(id: string): Observable<any> {
-    return this.http.get<any>(this.url + `/user/${id}`);
+  getPlayers(): Observable<any> {
+    return this.http.get<any>(this.url + `/player`);
   }
 }
