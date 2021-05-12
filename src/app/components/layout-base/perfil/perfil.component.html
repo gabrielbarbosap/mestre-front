@@ -1,0 +1,8 @@
+<app-header></app-header>
+<div *ngIf="userAllData" class="card" style="margin: 1rem;">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Nickname: <span>{{userAllData.name}}</span></li>
+        <li class="list-group-item">Email: <span>{{userAllData.email}}</span></li>
+        <li class="list-group-item">Chave: <span>{{userAllData.question}}</span></li>
+    </ul>
+</div>

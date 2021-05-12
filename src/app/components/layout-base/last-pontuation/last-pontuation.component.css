@@ -1,5 +1,5 @@
 img {
-    width: 13%;
+    width: 30%;
     float: right;
 }
 
@@ -8,16 +8,26 @@ span {
     font-size: 1.5rem;
 }
 
+.submit {
+    border-radius: 5px;
+    border: none;
+    color: black;
+    width: 100%;
+    padding: 0.5rem;
+    float: right;
+    background-color: #FDBE11;
+}
+
 .team {
     text-align: center;
     font-size: 2rem;
 }
 
 small {
-    display: inline-block;
-    margin-right: 1rem;
+    display: block;
+    font-weight: 500;
 }
 
-.card-body {
-    background-color: #FDBE11;
+.container {
+    text-align: center;
 }

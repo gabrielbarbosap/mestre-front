@@ -1,1 +1,22 @@
-<p>my-team works!</p>
+<div *ngIf="userAllData" class="card" style="margin: 1rem;">
+    <div class="card-body">
+        <h4 class="card-title">Pronto para <img src="../../../../assets/logo-02__1_-removebg-preview.png" alt=""></h4>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-6"><span>{{userAllData.team.zg_1.name}}</span> </div>
+                <div class="col-6"><span>{{userAllData.team.zg_2.name}}</span></div>
+            </div>
+            <div class="row">
+                <div class="col-6"><span>{{userAllData.team.mc_1.name}}</span></div>
+                <!-- alterar mc_1  -->
+                <div class="col-6"><span>{{userAllData.team.mc_2.name}}</span></div>
+            </div>
+            <div class="row">
+                <div class="col-12"><span>{{userAllData.team.at_1.name}}</span></div>
+            </div>
+        </div>
+        <hr>
+
+    </div>
+</div>

@@ -26,6 +26,7 @@ img {
     color: black;
     width: 100%;
     padding: 0.5rem;
+    border: none;
     float: right;
     background-color: #FDBE11;
 }

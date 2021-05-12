@@ -1,18 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { TeamService } from 'src/app/services/team.service';
-
 @Component({
-  selector: 'app-ranking',
-  templateUrl: './ranking.component.html',
-  styleUrls: ['./ranking.component.css'],
+  selector: 'app-ranking-match',
+  templateUrl: './ranking-match.component.html',
+  styleUrls: ['./ranking-match.component.css'],
 })
-export class RankingComponent implements OnInit {
+export class RankingMatchComponent implements OnInit {
   usersForRanking;
   constructor(private rankingService: TeamService) {}
 
   ngOnInit(): void {
     this.rankingService
-      .getRankingAll()
+      .getRankingMatch()
       .subscribe((res) => (this.usersForRanking = res.data));
   }
 }

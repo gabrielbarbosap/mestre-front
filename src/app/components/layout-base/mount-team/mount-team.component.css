@@ -1,24 +1,58 @@
-div {
-    display: inline-block;
-    margin: 0.2rem;
-    background-color: #FDBE11;
-    border-radius: 5px;
+h1 {
+    text-align: center;
+    border-top: solid;
+    margin: 1rem;
 }
 
-mat-accordion {
+hr {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    width: 10rem;
+    border-top: 1px solid rgb(253 190 17);
+}
+
+.tittle {
+    width: 77%;
     margin: 1rem;
-    display: inline-block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+mat-form-field {
+    width: 100%;
+    background-color: #fff;
+}
+
+::ng-deep .mat-form-field-underline {
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+    transform: scale3d(1, 1.0001, 1);
+    display: none;
+}
+
+::ng-deep .mat-form-field-wrapper {
+    padding-bottom: 0
+}
+
+img {
+    width: 55%;
+    margin: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .card-title {
     margin-bottom: 0;
 }
 
-.card-link {
-    border-radius: 5px;
+.submit-save {
+    border: none;
+    color: black;
+    width: 100%;
     padding: 0.5rem;
     float: right;
-    width: 100%;
-    color: #FFFFFF;
-    background-color: #0053A0;
+    background-color: #6ffd11;
 }

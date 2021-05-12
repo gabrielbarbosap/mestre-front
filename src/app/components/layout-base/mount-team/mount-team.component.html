@@ -1,17 +1,59 @@
-<mat-accordion class="example-headers-align" multi>
-    <mat-expansion-panel>
-        <mat-expansion-panel-header>
-            <mat-panel-title>
-                Escalar Time
-            </mat-panel-title>
-        </mat-expansion-panel-header>
-        <div *ngFor="let player of players">
-            <div class="card-body">
-                <h6 class="card-title">{{player.name}}</h6>
-                <span class="card-subtitle mb-2 text-muted">{{ player.position }}</span>
-                <button class="card-link">Escalar</button>
-            </div>
-        </div>
+<app-header></app-header>
+<img class="tittle" src="../../../../assets/logo-02__3_-removebg-preview.png" alt="">
+<hr>
 
-    </mat-expansion-panel>
-</mat-accordion>
+<img src="../../../../assets/zaga (2).png" alt="">
+<form [formGroup]='formTeam' (ngSubmit)="onSubmit()">
+
+    <div style="margin: 1rem;">
+        <mat-form-field appearance="fill">
+            <mat-label>selecionar primeiro defensor</mat-label>
+            <mat-select formControlName="zg_1">
+                <mat-option *ngFor="let state of zg" [value]="state">{{state.name}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+    <div style="margin: 1rem;">
+        <mat-form-field appearance="fill">
+            <mat-label>selecionar segundo defensor</mat-label>
+            <mat-select formControlName="zg_2">
+                <mat-option *ngFor="let state of zg" [value]="state">{{state.name}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+
+    <img src="../../../../assets/meio (2).png" alt="">
+
+    <div style="margin: 1rem;">
+        <mat-form-field appearance="fill">
+            <mat-label>selecionar primeiro meia</mat-label>
+            <mat-select formControlName="mc_1">
+                <mat-option *ngFor="let state of mc" [value]="state">{{state.name}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+    <div style="margin: 1rem;">
+        <mat-form-field appearance="fill">
+            <mat-label>selecionar segundo meia</mat-label>
+            <mat-select formControlName="mc_2">
+                <mat-option *ngFor="let state of mc" [value]="state">{{state.name}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+
+    <img src="../../../../assets/ataque (2).png" alt="">
+
+    <div style="margin: 1rem;">
+        <mat-form-field appearance="fill">
+            <mat-label>selecionar primeiro meia</mat-label>
+            <mat-select formControlName="at_1">
+                <mat-option *ngFor="let state of at" [value]="state">{{state.name}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <button class="submit-save" type="submit" [disabled]="!formTeam.valid">Salvar Escalação</button>
+</form>

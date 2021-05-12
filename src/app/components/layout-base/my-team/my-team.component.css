@@ -1,0 +1,39 @@
+img {
+    width: 30%;
+    vertical-align: baseline;
+}
+
+.col-4,
+.col-md-4 {
+    padding: 0
+}
+
+span {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: black;
+    width: 100%;
+    display: block;
+    margin-top: 2.5rem;
+}
+
+.submit {
+    border-radius: 5px;
+    border: none;
+    color: black;
+    width: 100%;
+    padding: 0.5rem;
+    float: right;
+    background-color: #FDBE11;
+}
+
+.team {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.container {
+    text-align: center;
+    background-image: url('../../../../assets/campo.jpg');
+    background-size: cover;
+}

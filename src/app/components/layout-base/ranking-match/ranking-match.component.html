@@ -1,0 +1,9 @@
+<app-header></app-header>
+<img class="tittle" src="../../../../assets/rodada (2).png" alt="">
+<hr>
+
+<div style="margin: 1rem;">
+    <ol>
+        <li *ngFor="let ra of usersForRanking">{{ ra.nick }} <span>{{ ra.lastMatch }}</span></li>
+    </ol>
+</div>

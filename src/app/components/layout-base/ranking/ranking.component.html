@@ -1,1 +1,9 @@
-<p>ranking works!</p>
+<app-header></app-header>
+<img class="tittle" src="../../../../assets/ranking (2).png" alt="">
+<hr>
+
+<div style="margin: 1rem;">
+    <ol>
+        <li *ngFor="let ra of usersForRanking">{{ ra.nick }} <span>{{ ra.totalPoints }}</span></li>
+    </ol>
+</div>

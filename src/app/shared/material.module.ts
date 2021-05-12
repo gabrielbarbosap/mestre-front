@@ -68,6 +68,7 @@ import { MatTreeModule } from '@angular/material/tree';
     MatSortModule,
     MatPaginatorModule,
     MatTreeModule,
+    MatGridListModule,
   ],
   exports: [
     MatCheckboxModule,
@@ -102,6 +103,7 @@ import { MatTreeModule } from '@angular/material/tree';
     MatSortModule,
     MatPaginatorModule,
     MatTreeModule,
+    MatGridListModule,
   ],
 })
 export class MaterialModule {}
